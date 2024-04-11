@@ -1,13 +1,257 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Estilo para o cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #90FF9C;
+  border-bottom: 1.5px solid #45B751;
+  color: #774231;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+/* Estilo para o corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  background-color: #c9f0f8;
+}
+
+/* Estilo para o título */
+.header-title {
+  margin: 0 auto;
+  /* Define margens automáticas para centralizar horizontalmente */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+/* Estilo para o footes */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #ACEDED;
+  /* Background azul */
+  border-top: 1.5px solid #80C1DD;
+  color: #774231;
+  /* Cor do texto branco */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* Adicione esta linha para distribuir igualmente o espaço entre os ícones */
+  width: 20%;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  color: #774231;
+}
+
+
+/* Estilo para colunas do body */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.paw-print {
+  margin: 10%;
+}
+
+.paw-print img {
+  width: 60%;
+  /* Ajuste o tamanho da imagem */
+}
+
+.left-column .left,
+.right-column .right {
+  transform: rotate(-20deg);
+}
+
+.left-column .right,
+.right-column .left {
+  transform: rotate(20deg);
+}
+
+/* Estilo para o form da página */
+.input-form {
+  margin: 2% auto;
+  width: 80%;
+  font-family: Arial, sans-serif;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  /* Centralizar o texto */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centralizar os formulários */
+}
+
+.form-step {
+  margin-bottom: 20px;
+  border: 1px solid #774231;
+  border-radius: 5px;
+  padding: 10px;
+  /* Reduzir o padding */
+  width: 100%;
+  /* Ajustar a largura dos passos do formulário */
+}
+
+.step-title {
+  font-size: 1.2rem;
+  /* Reduzir o tamanho da fonte */
+  color: #007bff;
+}
+
+.step-description {
+  font-size: 0.9rem;
+  /* Reduzir o tamanho da fonte */
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 50%;
+  /* Ajustar a largura dos grupos de formulário */
+  margin: auto;
+  /* Centralizar os grupos de formulário */
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  /* Ajustar a largura dos campos de entrada */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  /* Ajustar a largura do botão */
+  margin: auto;
+  /* Centralizar o botão */
+  display: block;
+  /* Adicionar para centralizar o botão */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.result-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.result-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  /* Adicionar overflow para permitir o scroll */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close-button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-content img {
+  max-width: 100%;
+  /* Limitar o tamanho da imagem */
+  height: auto;
 }

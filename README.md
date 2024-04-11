@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Petshop Finder
+- Author: Lucas Morato de Oliveira Xavier
+- Email: lmoxavier@gmail.com 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instruções para Executar o Sistema
 
-## Available Scripts
+1. Certifique-se de ter o Node.js instalado em seu computador. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
+2. Clone o repositório do projeto para o seu ambiente local.
+3. No terminal, navegue até o diretório raiz do projeto.
+4. Execute o comando `npm install` para instalar as dependências do projeto.
+5. Após a instalação das dependências, execute o comando `npm start` para iniciar o servidor de desenvolvimento.
+6. Para executar o backend Flask, navegue até o diretório `\teste_pratico_dti\src` no terminal e execute o comando `python app.py`.
+7. O Flask Python pode ser instalado executando `pip install Flask` no terminal, caso ainda não esteja instalado no ambiente.
+8. Certifique-se de que o backend Flask esteja sendo executado enquanto testa a aplicação frontend.
 
-In the project directory, you can run:
+## Lista de Premissas Assumidas
 
-### `npm start`
+- A aplicação assume que o usuário fornecerá uma data válida no formato DD/MM/AAAA.
+- O usuário informará a quantidade de cães pequenos e grandes para o banho.
+- A aplicação realizará cálculos com base nas informações fornecidas pelo usuário e fornecerá o melhor petshop com os preços mais baixos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Decisões de Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Utilização do React.js para construir a interface do usuário de forma eficiente e reativa.
+- Separação de componentes para facilitar a manutenção e reutilização do código.
+- Utilização de estado local para gerenciar os dados do formulário e as informações de retorno da API.
+- Estilização com CSS para garantir uma interface visualmente agradável e responsiva.
+- Utilização do Flask Python para criar um backend simples que integra com o frontend e fornece os dados necessários.
+- Utilização de um servidor de desenvolvimento para testar a aplicação localmente antes de implantação em produção.
